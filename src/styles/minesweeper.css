@@ -1,0 +1,100 @@
+.minesweeper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.minesweeper-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.minesweeper-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.minesweeper-button-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.minesweeper-button-primary:hover {
+  background-color: #2563eb;
+}
+
+.minesweeper-button-secondary {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.minesweeper-button-secondary:hover {
+  background-color: #d1d5db;
+}
+
+.minesweeper-button-active {
+  background-color: #ef4444;
+  color: white;
+}
+
+.minesweeper-button-active:hover {
+  background-color: #dc2626;
+}
+
+.minesweeper-status {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.minesweeper-board {
+  display: inline-block;
+  border: 2px solid #6b7280;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.minesweeper-row {
+  display: flex;
+}
+
+.minesweeper-cell {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: background-color 0.15s ease;
+}
+
+.minesweeper-cell-hidden {
+  background-color: #d1d5db;
+}
+
+.minesweeper-cell-hidden:hover {
+  background-color: #9ca3af;
+}
+
+.minesweeper-cell-revealed {
+  background-color: #f9fafb;
+  cursor: default;
+}
+
+.minesweeper-cell-revealed:hover {
+  background-color: #f9fafb;
+}
